@@ -1,14 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./globals.css";
+import { Inter, DM_Sans } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
 });
 
 export const metadata = {
@@ -19,10 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+      </head>
+      <body className={`${inter.className}`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
