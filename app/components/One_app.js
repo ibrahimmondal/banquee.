@@ -5,7 +5,7 @@ export default function One_app() {
         <div className="max-w-[1110px] m-auto text-center pt-20 bg-[#5BB5A2] rounded-lg">
            
    <div className="flex gap-20 flex-col md:flex-row">
-   <div className="pl-20">
+   <div className="pl-20 pb-10">
           <h1 className="text-5xl font-semibold text-white text-left dm-sans">
             One app. <br /> One banking.
           </h1> 
@@ -35,7 +35,7 @@ export default function One_app() {
           </div>
    </div>
  <div className="md:pr-20 mx-10">
-        <img src="/image/app (6).png" alt="oneapp" className="w-full mr-5"/>
+        <img src="/image/app (6).png" alt="oneapp" className="w-full mt-12" height="700"/>
  </div>
    </div>
        

@@ -57,7 +57,7 @@ export default function Faq() {
             </div>
             <button className="text-[15px] text-teal-500 py-10">Support  <i className="fa-solid fa-arrow-right "></i></button>
         </div>
-        <div className="w-[500px] p-4 space-y-4">
+        <div className="max-w-[500px] p-4 space-y-4">
       {faqs.map((faq, index) => (
         <div key={index} className="border-b">
           <button

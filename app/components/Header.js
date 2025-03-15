@@ -66,7 +66,7 @@ export default function Header() {
             <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Features</a>
             <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Compare</a>
             <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Support</a>
-            <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Blog</a>
+            <Link href="/blog" className="text-gray-700 hover:text-teal-600 font-medium">Blog</Link>
             <a href="#" className="text-teal-600 font-medium hover:text-teal-800">Login</a>
             <a
               href="#"
